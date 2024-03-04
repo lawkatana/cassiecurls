@@ -1,0 +1,674 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cassie Curls</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-[#f7f7f7] font-body text-neutral-600">
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+  
+    
+    <header class="inline-block relative align-middle w-full"> 
+      <!-- main nav -->
+      <div id="main-nav">
+        <!-- logo area -->
+        <div class="h-28 my-4">
+          <div class="relative h-full w-full px-8">
+            <div class="h-full w-full absolute left-0 text-center">
+              <div class="align-middle inline-block">
+                <a href="" class="h-28 inline-block max-h-32">
+                  <img src="img/cassie-curls-tiny.png" alt="logo" class="h-full">
+                </a>
+              </div>
+            </div>
+            <!-- open menu + cart lg:hidden nav -->
+            <div class="relative flex w-full justify-end z-50">
+              <!-- cart icon-->
+              <div class="align-middle">
+                <a href="" class="transition duration-300 hover:text-orange-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                  </svg>
+                </a>                 
+              </div><!--cart icon ends-->
+              <!-- hamburger -->
+              <div class="ml-3">
+                <div class="open-menu -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="h-6 w-6 transition duration-300 hover:text-orange-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </div>
+              </div><!--hamburger ends-->
+            </div><!--open main ends-->
+          </div>
+        </div>
+        <!-- nav links wrapper -->
+        <div class="h-12 relative hidden lg:block">
+          <div class="relative h-full w-full px-8">
+            <div class="absolute left-0 text-center  h-full w-full">
+              <div class="h-full align-middle inline-block">
+                <!-- nav starts -->
+                <nav class="uppercase relative inline-block align-middle h-full">
+                  <ul class="text-[13px] font-[500] tracking-wider inline-block align-middle h-full">
+                    <!-- list item starts -->
+                    <li class="active relative mx-5 float-left h-full">
+                      <a href="index.html" class="">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            Home
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                    <!-- list item starts -->
+                    <li class="relative mx-5 float-left h-full">
+                      <a href="#about" class="h-full">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            About
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                    <!-- list item starts -->
+                    <li class="relative mx-5 float-left h-full">
+                      <a href="#contact" class="h-full">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            Contact
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                    <!-- list item starts -->
+                    <li class="relative mx-5 float-left h-full">
+                      <a href="#products" class="h-full">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            Products
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                  </ul>
+                </nav><!-- nav ends -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- sticky navbar -->
+      <div class="fixed h-14 w-full bg-[#f7f7f7] top-0 left-0 z-50 -translate-y-full transition duration-300" id="sticky-navbar">
+        <div class="h-full  relative z-10 shadow-md">
+          <div class="relative h-full w-full px-8">
+            <!-- left -->
+            <div class="relative float-left z-10 h-full">
+              <div class="table h-full">
+                <div class="table-cell align-middle">
+                  <a href="index.html">
+                    <img src="img/cassie-curls-tiny.png" alt="logo" class="h-10">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- center -->
+            <div class="h-full w-full hidden lg:block absolute left-0 text-center z-[1]">
+              <div class="h-full align-middle inline-block">
+                <!-- nav starts -->
+                <nav class="text-center uppercase relative inline-block align-middle h-full">
+                  <ul class="text-[13px] font-[500] tracking-wider inline-block align-middle relative h-full">
+                    <!-- list item starts -->
+                    <li class="nav-link hero active mx-5 relative float-left h-full">
+                      <a href="index.html" class="h-full relative inline-block ">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            Home
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                    <!-- list item starts -->
+                    <li class="nav-link about mx-5 relative float-left h-full">
+                      <a href="#about" class="h-full relative inline-block ">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            About
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                    <!-- list item starts -->
+                    <li class="nav-link contact mx-5 relative float-left h-full">
+                      <a href="#contact" class="h-full relative inline-block ">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            Contact
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                    <!-- list item starts -->
+                    <li class="nav-link about-products mx-5 products relative float-left h-full">
+                      <a href="#products" class="h-full relative inline-block ">
+                        <span class="outer block relative top-[50%] -translate-y-[50%]">
+                          <span class="inner">
+                            Products
+                          </span>
+                        </span>
+                      </a>
+                    </li><!-- list item ends-->
+                  </ul>
+                </nav><!-- nav ends -->
+              </div>
+            </div>
+            <!-- right -->
+            <div class="relative float-right z-10 h-full text-right">
+              <div class="h-full align-middle inline-block">
+                <div class="flex h-full relative items-center">
+                  <!-- cart icon -->
+                  <div class="align-middle">
+                    <a href="" class="transition duration-300 hover:text-orange-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                      </svg>
+                    </a>                 
+                  </div><!--cart icon ends-->
+                  <!-- hamburger -->
+                  <div class="ml-3">
+                    <!-- open main lg:hidden nav -->
+                    <div class="flex ">
+                      <div class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="open-menu h-6 w-6 transition duration-300 hover:text-orange-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div><!--harmburger ends-->
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Mobile  menu, show/hide based on menu open state. -->
+      <div class="" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-[99] hidden" id="menu-overlay" ></div>
+        <div class="fixed inset-y-0 right-0 z-[100] w-full overflow-y-auto bg-[#f7f7f7] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 nav-menu" id="nav-menu">
+          <div class="relative flex items-center justify-between">
+            <a href="index.html" class="-m-1.5 p-1.5">
+              <span class="sr-only">Cassie Curls</span>
+            </a>
+            <div class="-m-2.5 rounded-md p-2.5 text-gray-700 transition duration-300 hover:text-orange-400 cursor-pointer" id="close-menu">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+          </div> 
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10 lg:divide-y-0 flex flex-col justify-between">
+              <div class="lg:hidden space-y-2 py-6">
+                <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50">Home</a>
+                <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50">About</a>
+                <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50">Contact</a>
+                <a href="#products" class="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50">Products</a>
+              </div>
+              <div class="py-6 flex flex-col justify-center">
+                <img src="img/cassie-curls-tiny.png" alt="logo" class="h-16 md:h-40 object-contain object-left">
+                <p class="-mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 hover:bg-gray-50">The vision is to empower and encourage all Naturals to embrace who they are because at Cassie Curls we believe your hair is your identity.</p>
+                <div class="socials flex gap-2">
+                  <a href="" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300">
+                    <svg fill="currentColor" width="25px" height="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path></g></svg>
+                  </a>
+                  <a href="https://www.instagram.com/cassierooted/" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300" target="_blank">
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z" fill="currentColor"></path> </g></svg>
+                  </a>
+                  <a href="" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300">
+                    <svg fill="currentColor" width="25px" height="25px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path> </g></svg>
+                  </a>
+                  <a href="#!" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300">
+                    <svg width="25px" height="25px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="currentColor"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+  
+    </header>
+    
+      <!-- hero starts -->
+      <section id="hero" class="relative z-0 bg-hero-img bg-center bg-cover bg-no-repeat">
+        <div class="container mx-auto">    
+          <div class="lg:h-[460px]">
+            <div class="px-5 py-20 md:py-10 h-full w-full flex items-center">
+              <div class="w-3/4 lg:w-1/2">
+                <h1 class="font-heading text-3xl md:text-[3rem] lg:text-[4rem] text-neutral-800 leading-tight capitalize">
+                  believe your hair, Your Identity
+                </h1>
+                <p class="uppercase text-[12px] tracking-widest text-neutral-800 font-[500]">
+                  Cassie Curls specialises in Natural both hair and Skin care products from raw organic butters and plant based oils.
+                </p>
+                <div class="relative ">
+                  <span class="inline-block before:bg-orange-400 before:h-[2px] before:w-12 before:absolute before:top-2"></span>
+                </div>
+                <p class="text-[15px] md:text-base leading-relaxed">
+                  The vision is to empower and encourage all Naturals to embrace who they are because at Cassie Curls we believe your hair is your identity.
+                </p>
+                <button class="bg-orange-400 mt-5 px-6 sm:px-10 p-2 sm:py-4">
+                  <a href="" class="text-white text-sm uppercase">
+                    Purchase
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero ends -->
+  
+  
+      <!-- about starts -->
+      <section id="about" class="relative bg-about-img bg-center bg-cover bg-no-repeat ">
+        <div class="container mx-auto">    
+          <div class="py-20">
+            <div class="px-5 h-full w-full text-right md:text-left sm:flex justify-end items-center">
+              <div class="sm:w-9/12 md:w-1/2">
+                <h2 class="text-base md:text-xl font-[500] uppercase text-neutral-700 leading-tight mb-2">About Cassie Curls</h2>
+                <div class="relative">
+                  <span class="inline-block before:bg-orange-400 before:h-[2px] before:w-12 before:absolute before:top-1 before:right-0 md:before:left-0"></span>
+                </div>
+                <h3 class="font-heading text-3xl md:text-4xl text-neutral-800 leading-tight">
+                  Your Natural Hair Haven
+                </h3>
+                <p class="leading-7 text-[14px] md:text-base">
+                  Inspired by our love for Natural hair and the beauty of it but mostly the value and the importance of hair in African cultures traced back from Centuries ago. Natural hair butters and Oils has been part of Hair care routine in all cultures.
+                </p>
+                <p class="leading-7 text-[14px] md:text-base mt-8">
+                  Understanding that times had changed and so has the weather conditions, Cassie curls stresses on producing the right products suitable for all hair types. Products that are chemical free with no Parabens and sulphates.
+                </p>
+                <button class="bg-orange-400 mt-5 px-6 sm:px-10 p-2 sm:py-4">
+                  <a href="" class="text-white text-sm uppercase">
+                    Learn more
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about ends -->
+  
+  
+      <!-- contact starts -->
+      <section id="contact" class="relative bg-contact-img bg-fixed bg-center bg-cover bg-no-repeat">
+        <div class="container mx-auto">    
+          <div class="py-20">
+            <div class="px-5 h-full w-full flex justify- items-center">
+  
+              <!-- form wrapper -->
+              <div class="px-4">
+                <h2 class="text-white font-heading text-2xl sm:text-3xl md:text-4xl leading-tight">
+                  Get In Touch With Us
+                </h2>
+                <h5 class="text-white text-[15px] md:text-base leading-7">
+                  We’re always happy to hear from you, whether you have a question, a suggestion, or a testimonial.
+                </h5>
+                <form action="">
+                  <div class="form-wrap my-3 w-full">
+                    <input type="text" class="form-control w-full px-5 py-3 text-xs placeholder:text-[11px]"   placeholder="NAME">
+                  </div>
+                  <div class="form-wrap my-3 w-full">
+                    <input type="text" class="form-control w-full px-5 py-3 text-xs placeholder:text-[11px]" placeholder="EMAIL">
+                  </div>
+                  <div class="form-wrap my-3 w-full">
+                    <textarea name="" id="" cols="20" rows="4" class="form-control px-5 py-3 w-full text-xs placeholder:text-[11px] resize-none outline-none" placeholder="MESSAGE"></textarea>
+                  </div>
+                  <button type="submit" class="text-white text-sm uppercase bg-orange-400 my-34 px-6 sm:px-10 p-2 sm:py-4">
+                    send
+                  </button>
+                </form>
+                
+                
+              </div><!--form wrapper ends-->
+  
+              <!--images wrapper-->
+              <div class="hidden md:block px-4">
+                <div>
+                  <img src="img/image3.jpg" alt="">
+                </div>
+              </div><!--image ends-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact ends -->
+  
+  
+      <!-- about product starts-->
+      <section id="about-products" class="">
+        <div class="container mx-auto">    
+          <div class="py-20">
+            <div class="px-5 h-full w-full flex justify- items-center">
+  
+              <!-- content wrapper -->
+              <div class="text-left md:text-right px-4 flex-1">
+                <h2 class="font-heading text-3xl md:text-4xl  text-neutral-800 leading-tight"><strong>Purely Organic Elixirs:</strong> Nourish your curls with nature’s goodness.</h2>
+                <p class="text-base leading-7 mt-8">
+                  Like galaxies our hair grows in a spiral pattern, like trees our hair grows towards the sun. 
+                  Did you know, Curly Afro Hair covers the width on average of 100,000 to 200,000 strands of hair.
+                </p>
+                <button class="bg-orange-400 mt-8 px-6 sm:px-10 p-2 sm:py-4">
+                  <a href="" class="text-white text-sm uppercase">
+                    Learn more
+                  </a>
+                </button>
+                
+                
+              </div><!--content wrapper ends-->
+  
+              <!--image wrapper-->
+              <div class="hidden md:block px-4 flex-1">
+                <div>
+                  <img src="img/image4.jpg" alt="">
+                </div>
+              </div><!--image ends-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about products ends-->
+  
+  
+      <!-- products starts -->
+      <section id="products" class="">
+        <div class="container mx-auto">    
+          <div class="pt-14 pb-10 px-5">
+            <div class="h-full w-full">
+  
+              <div class="text-center mb-10">
+                <h2 class="font-heading text-3xl md:text-4xl text-neutral-800">Our Products</h2>
+                <p class="mt-3 text-[14px]">Grow Your Hair Faster and Longer Naturally</p>
+              </div>
+  
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product1.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Whipped Butter
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+                
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product2.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge relative bg-neutral-800 text-gray-50 px-14 py-1 -mt-7 translate-y-12 transition duration-500 hover:bg-orange-400">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Shampoo Cream
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+  
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product3.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge relative bg-neutral-800 text-gray-50 px-14 py-1 -mt-7 translate-y-12 transition duration-500 hover:bg-orange-400">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Shampoo Cream
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+  
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product4.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge relative bg-neutral-800 text-gray-50 px-14 py-1 -mt-7 translate-y-12 transition duration-500 hover:bg-orange-400">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Shampoo Cream
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+  
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product1.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge relative bg-neutral-800 text-gray-50 px-14 py-1 -mt-7 translate-y-12 transition duration-500 hover:bg-orange-400">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Shampoo Cream
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+                
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product2.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge relative bg-neutral-800 text-gray-50 px-14 py-1 -mt-7 translate-y-12 transition duration-500 hover:bg-orange-400">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Shampoo Cream
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+  
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product3.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge relative bg-neutral-800 text-gray-50 px-14 py-1 -mt-7 translate-y-12 transition duration-500 hover:bg-orange-400">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Shampoo Cream
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+  
+                <!-- product item starts -->
+                <div class="product-card px-2 flex flex-col items-center">
+                  <div class="flex flex-col items-center overflow-hidden">
+                    <img src="img/product4.png" alt="products" class="product-img transition duration-300">
+                    <a href="#" class="buy-badge relative bg-neutral-800 text-gray-50 px-14 py-1 -mt-7 translate-y-12 transition duration-500 hover:bg-orange-400">Buy Now</a>
+                  </div>
+                  <div class="relative">
+                    <p class="product-description">
+                      Discover Haircare
+                    </p>
+                    <h2 class="product-name">Shampoo Cream
+                    </h2>
+                    <span class="text-lg text-neutral-800 font-semibold hover:text-orange-400 transition duration-300">R450
+                    </span>
+                  </div>
+                </div><!--product item ends-->
+              </div>
+  
+              <div class="text-center my-4">
+                <button class="bg-orange-400 mt-8 px-6 sm:px-10 p-2 sm:py-4">
+                  <a href="" class="text-white text-sm uppercase">
+                    Load more
+                  </a>
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- products ends -->
+  
+      <!-- conclusion starts -->
+      <section id="conclusion" class="relative  bg-conclusion-img bg-fixed bg-top bg-cover bg-no-repeat">
+        <div class="container mx-auto">    
+          <div class="py-20">
+            <div class="px-5 h-full w-full flex justify-center items-center">
+              <div class="text-gray-50 text-center lg:w-1/2">
+                <h2 class="font-heading text-3xl sm:text-4xl leading-tight">Your Natural Hair Haven</h2>
+                <p class="text-[14px] sm:text-base leading-7 mt-8">
+                  Our products are made with organic ingredients, cruelty-free, and eco-friendly. Plus, they smell great and make your hair feel soft and shiny. Don’t miss this opportunity to treat your hair with the best products on the market. Order now and get a free sample of our new hair oil. Trust us, your hair will thank you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- conclusion ends -->
+
+    
+     
+  
+      <footer >
+        <div class="container mx-auto">
+          <div class="flex p-10 flex-col sm:flex-row gap-16">
+            <!-- company info -->
+            <div class="flex-[2]">
+              <div class="lg:w-3/4">
+                <div class="logo align-middle inline-block">
+                  <a href="index.html">
+                    <img src="img/cassie-curls-tiny.png" alt="logo" class="h-16">
+                  </a>
+                </div>
+                <div class="my-4">
+                  <p class="text-[14px] sm:text-base">
+                    The vision is to empower and encourage all Naturals to embrace who they are because at Cassie Curls we believe your hair is your identity.
+                  </p>
+                </div>
+                <div class="socials flex gap-2">
+                  <a href="" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300">
+                    <svg fill="currentColor" width="25px" height="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path></g></svg>
+                  </a>
+                  <a href="https://www.instagram.com/cassierooted/" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300" target="_blank">
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z" fill="currentColor"></path> </g></svg>
+                  </a>
+                  <a href="" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300">
+                    <svg fill="currentColor" width="25px" height="25px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>tiktok</title> <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path> </g></svg>
+                  </a>
+                  <a href="#!" class="p-1 border-[1px] hover:bg-orange-400 hover:text-white transition-all duration-300">
+                    <svg fill="currentColor" height="25px" width="25px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308 308" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_468_"> <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z"></path> <path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"></path> </g> </g></svg>
+                  </a>
+                </div>
+              </div>
+            </div><!--company info ends-->
+    
+            <!-- links -->
+            <div class="flex-1">
+              <div>
+                <h3 class="font-heading text-xl sm:text-2xl font-[500]">Links</h3>
+              </div>
+              <div class="relative leading-[0.8]">
+                <span class="inline-block before:bg-orange-400 before:h-[2px] before:w-8 before:absolute before:top-1"></span>
+              </div>
+              <div class="text-[14px] sm:text-base">
+                <div>
+                  <a href="index.html" class="leading-relaxed transition duration-300 hover:text-orange-400">Home</a>
+                </div>
+                <div>
+                  <a href="#about" class="leading-relaxed transition duration-300 hover:text-orange-400">About</a>
+                </div>
+                <div>
+                  <a href="#products" class="leading-relaxed transition duration-300 hover:text-orange-400">Products</a>
+                </div>
+                <div>
+                  <a href="#contact" class="leading-relaxed transition duration-300 hover:text-orange-400">Contact</a>
+                </div>
+              </div>
+            </div><!--links end-->
+    
+            <!-- contact info -->
+            <div class="flex-1">
+              <div>
+                <h2 class="font-heading text-xl sm:text-2xl font-[500]">Talk to us</h2>
+              </div>
+              <div class="relative leading-[0.8]">
+                <span class="inline-block before:bg-orange-400 before:h-[2px] before:w-8 before:absolute before:top-1"></span>
+              </div>
+              <div>
+                <p class="leading-relaxed">
+                  Got Questions? Call us
+                </p>
+                <a href="tel:+27 61 208 1297" class="text-xl transition duration-300 hover:text-orange-400">+27 61 208 1297</a>
+              </div>
+              <div class="text-[14px] sm:text-base flex items-center gap-2 my-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                  <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                </svg>            
+                <a href="mailto:info@cassiecurls.co.za" class="transition duration-300 hover:text-orange-400">info@cassiecurls.co.za</a>
+              </div>
+              <div class="text-[14px] sm:text-base flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                </svg>
+                
+                <a href="" class="duration-300 hover:text-orange-400">91 Fleet Street, Quigney <br> East London 5201</a>
+              </div>
+            </div><!--contact info ends-->
+          </div>
+          <div class="text-center">
+            <p class="text-[14px] leading-loose">&copy;2023 Cassie Curls, <span>Designed by Lawrence Katana</span></p>
+          </div>
+        </div>
+      </footer>
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
